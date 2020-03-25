@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\contract\Lykke.Service.Tiers.Contract\Lykke.Service.Tiers.Contract.csproj" />
+    <ProjectReference Include="..\Lykke.Service.Tiers.Domain\Lykke.Service.Tiers.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Falcon.Service.CustomerProfile.Client" Version="7.7.0" />
+    <PackageReference Include="Lykke.RabbitMqBroker" Version="7.13.1" />
+  </ItemGroup>
+</Project>

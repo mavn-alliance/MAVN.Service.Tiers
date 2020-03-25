@@ -1,0 +1,38 @@
+TiersService:
+  Db:
+    LogsConnectionString:
+      settings-key: TiersService-LogsConnectionString
+      types:
+        - AzureTableStorage
+    DataConnectionString:
+      settings-key: TiersService-DataConnectionString
+
+  Rabbit:
+    Subscribers:
+      BonusReceivedConnectionString:
+        settings-key: WalletManagementRabbitMQ
+        types:
+        - RabbitMq
+
+    Publishers:
+      CustomerTierChangedConnectionString:
+        settings-key: BonusManagementRabbitMQ
+        types:
+        - RabbitMq
+
+SlackNotifications:
+  AzureQueue:
+    ConnectionString:
+      settings-key: SlackNotificationsConnString
+      types:
+        - AzureTableStorage
+    QueueName:
+      settings-key: SlackQueueName
+
+CustomerProfileServiceClient:
+  ServiceUrl:
+    settings-key: CustomerProfileServiceUrl
+
+MonitoringServiceClient:
+  MonitoringServiceUrl:
+    settings-key: MonitoringServiceUrl
