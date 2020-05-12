@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Common.Log;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using Lykke.Common.Log;
 using Lykke.RabbitMqBroker.Publisher;
-using Lykke.Service.CustomerProfile.Client;
-using Lykke.Service.CustomerProfile.Client.Models.Enums;
+using MAVN.Service.CustomerProfile.Client;
+using MAVN.Service.CustomerProfile.Client.Models.Enums;
 using MAVN.Service.Tiers.Contract;
 using MAVN.Service.Tiers.Domain.Entities;
 using MAVN.Service.Tiers.Domain.Exceptions;

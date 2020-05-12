@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Numerics;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using JetBrains.Annotations;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.Tiers.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
