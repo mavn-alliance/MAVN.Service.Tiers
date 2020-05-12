@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MAVN.Numerics;
 
 namespace MAVN.Service.Tiers.Domain.Entities

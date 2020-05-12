@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.Tiers.Domain.Repositories;
 using MAVN.Service.Tiers.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
