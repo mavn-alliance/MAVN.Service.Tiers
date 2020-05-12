@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 using Lykke.Common;
 using Lykke.RabbitMqBroker.Publisher;
 using Lykke.Sdk;
-using Lykke.Service.CustomerProfile.Client;
+using MAVN.Service.CustomerProfile.Client;
 using Lykke.SettingsReader;
 using MAVN.Service.Tiers.Contract;
 using MAVN.Service.Tiers.Rabbit.Subscribers;
