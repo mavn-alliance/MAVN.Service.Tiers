@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.Tiers.Domain.Entities;
 using MAVN.Service.Tiers.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -11,10 +11,10 @@ namespace MAVN.Service.Tiers.MsSqlRepositories.Repositories
 {
     public class TiersRepository : ITiersRepository
     {
-        private readonly MsSqlContextFactory<DataContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<DataContext> _contextFactory;
         private readonly IMapper _mapper;
 
-        public TiersRepository(MsSqlContextFactory<DataContext> contextFactory, IMapper mapper)
+        public TiersRepository(PostgreSQLContextFactory<DataContext> contextFactory, IMapper mapper)
         {
             _contextFactory = contextFactory;
             _mapper = mapper;

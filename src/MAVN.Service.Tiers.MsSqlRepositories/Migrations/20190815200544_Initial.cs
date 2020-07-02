@@ -16,7 +16,7 @@ namespace MAVN.Service.Tiers.MsSqlRepositories.Migrations
                 columns: table => new
                 {
                     id = table.Column<Guid>(nullable: false),
-                    name = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    name = table.Column<string>(nullable: false),
                     threshold = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

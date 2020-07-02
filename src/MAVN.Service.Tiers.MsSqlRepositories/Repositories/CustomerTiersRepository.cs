@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.Tiers.Domain.Repositories;
 using MAVN.Service.Tiers.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -10,9 +10,9 @@ namespace MAVN.Service.Tiers.MsSqlRepositories.Repositories
 {
     public class CustomerTiersRepository : ICustomerTiersRepository
     {
-        private readonly MsSqlContextFactory<DataContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<DataContext> _contextFactory;
 
-        public CustomerTiersRepository(MsSqlContextFactory<DataContext> contextFactory)
+        public CustomerTiersRepository(PostgreSQLContextFactory<DataContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }

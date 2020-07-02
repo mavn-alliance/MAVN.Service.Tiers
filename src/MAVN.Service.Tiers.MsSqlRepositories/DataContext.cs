@@ -4,13 +4,13 @@ using System.Data.Common;
 using System.Numerics;
 using MAVN.Numerics;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.Tiers.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MAVN.Service.Tiers.MsSqlRepositories
 {
-    public class DataContext : MsSqlContext
+    public class DataContext : PostgreSQLContext
     {
         internal const string Schema = "tiers";
 
@@ -35,7 +35,7 @@ namespace MAVN.Service.Tiers.MsSqlRepositories
         {
         }
 
-        protected override void OnLykkeModelCreating(ModelBuilder modelBuilder)
+        protected override void OnMAVNModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<TierEntity>()
                 .HasMany<CustomerTierEntity>()
