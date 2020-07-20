@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using AutoMapper;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.Tiers.Domain.Entities;
 using MAVN.Service.Tiers.Domain.Repositories;
 using MAVN.Service.Tiers.MsSqlRepositories.Entities;
@@ -12,10 +12,10 @@ namespace MAVN.Service.Tiers.MsSqlRepositories.Repositories
     public class CustomerBonusesRepository : ICustomerBonusesRepository
     {
         private readonly IMapper _mapper;
-        private readonly MsSqlContextFactory<DataContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<DataContext> _contextFactory;
 
         public CustomerBonusesRepository(
-            MsSqlContextFactory<DataContext> contextFactory,
+            PostgreSQLContextFactory<DataContext> contextFactory,
             IMapper mapper)
         {
             _contextFactory = contextFactory;

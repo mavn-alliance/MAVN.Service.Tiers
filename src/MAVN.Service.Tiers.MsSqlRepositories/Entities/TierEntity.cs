@@ -24,7 +24,7 @@ namespace MAVN.Service.Tiers.MsSqlRepositories.Entities
         public Guid Id { get; set; }
 
         [Required]
-        [Column("name", TypeName = "nvarchar(50)")]
+        [Column("name")]
         public string Name { get; set; }
 
         [Column("threshold")]
